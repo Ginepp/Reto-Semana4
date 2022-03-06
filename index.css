@@ -64,3 +64,9 @@ text-decoration: none;
   color: rgb(219, 6, 138);
   transition: .5s;
 }
+
+.animate__fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+  animation-duration: 5s;
+}
