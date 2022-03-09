@@ -1,11 +1,11 @@
 window.addEventListener('load', function () {
-    console.log('el contenido ha cargado');
+    console.log('contenido ha cargado');
     
     var imagenes = [];
 
-    imagenes[0] = './img/img2.jpg'
-    imagenes[1] = './img/img3.jpg'
-    imagenes[2] = './img/img4.jpg'
+    imagenes[0] = '../img/img2.jpg'
+    imagenes[1] = '../img/img3.jpg'
+    imagenes[2] = '../img/img4.jpg'
 
     var indiceImagenes = 0;
     var tiempo = 1000;
@@ -22,5 +22,6 @@ window.addEventListener('load', function () {
     }
 
     setInterval(cambiarImagenes, tiempo);
+    
     
 });

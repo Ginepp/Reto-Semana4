@@ -21,15 +21,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #FBF8F1;
-}
-
-header {
-    width: 100%;
-    height: 100vh;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
+   background-color: #e2d7d1;
 }
 
 /* Navegacion*/
@@ -94,13 +86,27 @@ nav {
 }
 
 
-.banner-text{
-text-align: center;
-margin: 50px;
-color: #562349;
-
+/* banner */
+.banner-container {
+    background-image: url(../img/img5.png);
+    width: 100%;
+    height: 486px;
+    background-position: center;
+    background-size: cover;
 }
 
+.banner-text {
+    padding: 0 30px;
+    text-align: end;
+    position: relative;
+    top: 137px;
+}
+
+.banner-text h1 {
+    font-size: 50px;
+    margin-bottom: 30px;
+    color: #f5087e;
+}
 
 /* Responsive for desktop */
 @media screen and (min-width: 768px) {
@@ -134,4 +140,19 @@ color: #562349;
         transition: none;
     
     }
+  
+    .banner-container {
+        background-image: url(../img/img5.png);
+        background-position: center;
+        background-size: cover;
+        margin-top: 67px;
+    }
+    
+    .banner-text {
+        padding: 0 30px;
+        text-align: end;
+        position: relative;
+        top: 137px;
+    }
+
 }
