@@ -14,17 +14,14 @@
 <body>
     <header class="header">
         <nav class="header-nav">
-            <div class="logo-container">
-                <img src="./img/dulces detalles tarjeta.png" alt="logo" class="logo-container">
-            </div>
             <input type="checkbox" id="check" />
             <label for="check" class="bar-btn">
                 <i class="fa-solid fa-cupcake"></i>
             </label>
 
             <ul class="nav-menu">
-                <li><a class="active" href="#">Inicio</a></li>
-                <li><a href="#profile">Sobre Nosotros</a></li>
+                <li><a class="active" href="./index.html">Inicio</a></li>
+                <li><a href="./sobrenostros.html">Sobre Nosotros</a></li>
                 <li><a href="#card">Nuestros Paquetes</a></li>
                 <li><a href="https://api.whatsapp.com/send?phone=51970486444">Contacto</a></li>
             </ul>
@@ -36,8 +33,11 @@
             <div class="banner-text">
                 <h1>DULCES DETALLES ROMERITO</h1>
             </div>
+            <div class="logo-container">
+                <img src="./img/dulces detalles tarjeta.png" alt="logo" class="logo-container">
+            </div>
         </section>
-
+        <span id="first__screen">
         <section class="cards-contenedor-promociones first__screen" id="card">
             <h2 class="sombraText zoom">NUESTROS PAQUETES ROMERITO</h2>
             <div class="content_cards">
@@ -64,7 +64,7 @@
             </div>
         </section>
 
-        <span id="first__screen"></span>
+        
         <section class="pedidos first__screen">
             <h2 class="sombraText zoom">GALERIA</h2>
             <div class="contenedor">
@@ -98,15 +98,52 @@
             </div>
         </section>
         </span>
+        <section id="second__screen">
+            <p class="vent-description">DETALLE DE TU COMPRA</p><br>
+            <div id="vent" class="vent">
+              <p class="vent-description2"> TEMATICA: Vaca Lola <br>
+                💟 Paquete #3 <br>
+                Torta 25 porciones <br>
+                +6 cupcakes<br>
+                +6 galletas<br>
+                +6 chocomanzanas<br>
+                +6 paletas de chocolate<br>
+                +6 cakepops<br>
+                +6 alfajores <br><br>
+                TOTAL: 365.00<br>
+              </p>
+      
+              <figure >
+                <img src="./img/imgpack.jpg" alt="fotopaquete" class="profile__image">
+              </figure>
+            </div>
 
+            <div class="vent-second">
+      
+              <form class="form">
+                <fieldset class="fieldset">
+                  <legend>COMPRE AHORA</legend><br>
+      
+                  <div id="contenedor" class="">
+      
+                    <label for="numberCard">Ingrese su numero de Tarjeta</label><br>
+                    <input type="text" maxlength="16" id="numberCard" required><br>
+      
+                    <input id="btnValid" class="btn" type="button" value="Compre Ahora" required><br>
+      
+      
+                    <p class="numero" id="number"></p>
+                    <p id="resultado"></p>
+      
+                    <input id="btnBack" class="btn" type="button" value="Volver">
+      
+                  </div>
+                </fieldset>
+      
+              </form>
+            </div>
+        </section>
     </main>
+    <script src="./js/index.js" type="module"></script>
 </body>
-
 </html>
-
-<!--
-        <div class="slider">
-        <figure class="slider-container">
-            <img name="slider" class="sliderimage">
-        </figure>
-    </div>-->
