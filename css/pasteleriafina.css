@@ -1,0 +1,642 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+:root {
+    
+    --facebook: #3b5999;
+    --instagram: #e4405f;
+    --twitter: #55acee;
+    --pinterest: #bd081c;
+    --linkedin: #0077B5;
+    --inverse-theme-color: #20232a;
+    --box-shadow: #21242c80;
+}
+
+/*Estilos principal*/
+
+body {
+    font-family: 'Montserrat', sans-serif;
+   background-color: #e2d7d1;
+}
+
+/* Navegacion*/
+nav {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index:10;
+}
+
+.logo-container {
+    margin-left: 28px;
+    width: 61px;
+    margin-top: -40px;
+}
+
+.nav-menu {
+    position: fixed;
+    width: 100%;
+    height: 0vh;
+    top: 100px;
+    background-color: #ebced3;
+    text-align: center;
+    transition: all .5s;
+    box-shadow: 0 0.25rem 0.25rem 0 var(--box-shadow);
+}
+
+.nav-menu li {
+    display: none;
+    line-height: 30px;
+    margin: 50px 0;
+    transition: all .5s;
+}
+
+.nav-menu li a {
+    color: rgb(150, 31, 130);
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.nav-menu li a.active, .nav-menu li a:hover {
+    color: rgb(83, 97, 223);
+    transition: .3s;
+}
+
+#check {
+    display: none;
+}
+
+#check:checked~.nav-menu {
+    height: 100vh;
+}
+
+#check:checked~.nav-menu li {
+    display: block;
+}
+
+.nav-menu li a.active, .nav-menu li a:hover {
+    color: rgb(82, 12, 85);
+    transition: .3s;
+}
+
+
+/* banner */
+.banner-container {
+    background-image: url(../img/img5.png);
+    width: 100%;
+    height: 486px;
+    background-position: center;
+    background-size: cover;
+}
+
+.banner-text {
+    padding: 0 30px;
+    text-align: end;
+    position: relative;
+    top: 137px;
+}
+
+.banner-text h1 {
+    font-size: 50px;
+    margin-bottom: 30px;
+    color: #55213b;
+}
+.buy_button {
+
+    padding: 10px 30px;
+    background-color: white;
+    color: rgb(253, 37, 253);
+    border-radius: 5px;
+    margin: 5px;
+    font-weight: bold;
+}
+
+.buy_button:hover {
+    background-color: rgb(228, 55, 219);
+    color: white;
+    transition: .5s;
+}
+
+
+#first__screen{
+    display: block;
+}
+
+#second__screen{
+    display: none;
+}
+
+.content_cards__title {
+    text-shadow: 7px 7px 7px;
+}
+
+/*contenido sobre nosotros*/
+.profile {
+    text-align: center;
+    padding: 70px;
+
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    padding: 55px;
+    max-width: 1024px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile__info {
+    flex: 1;
+    gap: 1.5rem;
+    text-align: left;
+    line-height: 1.5;
+    text-align: center;
+    margin: 5px;
+}
+
+.profile__info-title {
+    font-size: 2.5rem;
+}
+
+.profile__image-container {
+    display: flex;
+    max-width: 18rem;
+    overflow: hidden;
+    transition: all 0.5s;
+    border-radius: 50%;
+    border: 0.25rem solid var(--inverse-theme-color);
+}
+
+.profile__image {
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: rgb(38 57 77) 0px 20px 30px -10px;
+}
+/* cards */
+.content_card__image {
+    width: 100%;
+    height: 200px;
+}
+
+.cards-contenedor-promociones {
+    text-align: center;
+    padding: 40px;
+    color: #f5087e;
+}
+
+.content_cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 30px;
+    line-height: 3rem;
+}
+
+.card {
+    text-align: center;
+    box-shadow: 1px 2px 10px 0 rgb(0 0 0 / 100%);
+    margin: 8px;
+    padding: 10px;
+   color: brown;
+}
+
+.card:hover {
+    background-color: rgb(175, 233, 98);
+    color: rgb(44, 82, 83);
+    transition: 2s;
+}
+
+.vent {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 500;
+}
+.vent-second {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.vent-description {
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 24px;
+}
+
+.vent-description2 {
+    text-align: center;
+    background-color: white;
+    font-size: 20px;
+    font-family:  system-ui;
+    line-height: 2rem;
+    margin: 25px;
+    padding: 25px;
+    box-shadow: rgb(38 57 77) 0px 20px 30px -10px;
+}
+.profile__image {
+    width: 1px;
+}
+.form {
+    text-align: center;
+}
+.fieldset{
+    padding-left: 60px;
+    padding-right: 60px;
+    margin: 28px;
+    background-color: white;
+    font-size: 20px;
+    font-family:  system-ui;
+    box-shadow: rgb(38 57 77) 0px 20px 30px -10px;
+}
+
+.contenedor {
+    margin: auto;
+    width: 100%;
+    
+}
+
+.pedidos {
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    color: brown;
+}
+
+.trabajos-contenedor {
+    margin: 2px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.pedidos .contenedor {
+    display: grid;
+    grid-template-columns: repeat(1);
+    justify-content: center;
+}
+
+.content_card__images {
+    width: 100%;
+}
+
+.zoom {
+    transition: transform .2s;
+    /* Animation */
+}
+
+.zoom:hover {
+    transform: scale(2.5);
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.footer {
+    text-align: center;
+    color: #333;
+    font-size: 10px;
+    padding: 30px;
+
+}
+
+.redes-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.redes-container ul li {
+    display: inline-block;
+    margin: 0 5px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+
+.redes-container ul li a {
+    display: block;
+    padding: 0 10px;
+    background: #333;
+    color: white;
+    line-height: 30px;
+    font-size: 10px;
+    box-shadow: 0 3px 5px 0px rgb(0, 0, .2);
+    transition: .2s;
+}
+
+.redes-container ul:hover a {
+    filter: blur(2px);
+}
+
+.redes-container ul li a:hover {
+    transform: translateY(-3) scale(1.05);
+    box-shadow: 0 5px 5px 0px rgb(0, 0, 0, .4);
+    filter: none;
+}
+
+.redes-container ul li .facebook:hover {
+    background: var(--facebook);
+}
+
+.redes-container ul li .instagram:hover {
+    background: var(--instagram);
+}
+
+.redes-container ul li .twitter:hover {
+    background: var(--twitter);
+}
+
+.redes-container ul li .pinterest:hover {
+    background: var(--pinterest);
+}
+
+.redes-container ul li .linkedin:hover {
+    background: var(--linkedin);
+}
+
+
+/* Responsive for desktop */
+@media screen and (min-width: 768px) {
+
+    .logo-container {
+        margin-left: 477px;
+        margin-top: 75px;
+        width: 203px;
+    }
+
+    nav {
+        height: 100px;
+
+    }
+
+    .bar-btn {
+        display: none;
+    }
+
+    .nav-menu {
+        height: 100px;
+        top: 0;
+        background: none;
+        transition: none;
+        text-align: center;
+        background-color: #ebced3;
+    
+    }
+
+    .nav-menu li {
+        display: inline-block;
+        line-height: 100px;
+        margin: 0 20px;
+        transition: none;
+    
+    }
+  
+    .banner-container {
+        background-image: url(../img/img5.png);
+        background-position: center;
+        background-size: cover;
+        margin-top: 166px;
+    }
+    
+    .banner-text {
+        padding: 0 30px;
+        text-align: end;
+        position: relative;
+        top: 137px;
+    }
+
+      /*Estilos Sección Sobre Nosotros*/
+
+      .content_cards__title {
+        text-shadow: 7px 7px 7px;
+    }
+
+    .content_card__image {
+        width: 300px;
+        height: 400px;
+    }
+
+    .cards-contenedor-promociones {
+        text-align: center;
+        padding: 70px;
+        font-size: 20px;
+        color: brown;
+    }
+
+    .content_cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 30px;
+    }
+
+    .card {
+        text-align: center;
+        box-shadow: 1px 2px 10px 0 rgb(0 0 0 / 100%);
+        margin: 10px;
+        padding: 2px;
+        color: brown;
+    }
+
+    .card:hover {
+        background-color: rgb(175, 233, 98);
+        color: rgb(44, 82, 83);
+        transition: 2s;
+    }
+    .buy_button {
+
+        padding: 10px 30px;
+        background-color: white;
+        color: #f5087e;
+        border-radius: 5px;
+        margin: 5px;
+        font-weight: bold;
+    }
+    
+    .buy_button {
+        background-color: #f5087e;
+        color: white;
+        transition: .5s;
+    }
+
+    /* galeria-container*/
+
+    .sombraText {
+        text-shadow: 4px 4px 4px rgb(189, 159, 218), -4px -4px 6px rgb(212, 123, 200);
+        animation: zoom 2s alternate ease-in-out infinite;
+        transition: all 0.5s;
+        
+    }
+
+    .contenedor {
+        margin: auto;
+        width: 90%;
+       
+    }
+
+    .pedidos {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .trabajos-contenedor {
+        margin: 5px;
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    }
+
+    .pedidos .contenedor {
+        display: grid;
+        grid-template-columns: repeat(3, 23.9%);
+        justify-content: center;
+    }
+
+    .content_card__images {
+        width: 100%;
+        height: 300px;
+    }
+
+    .zoom {
+        transition: transform .2s;
+        /* Animation */
+    }
+
+    .zoom:hover {
+        transform: scale(1.2);
+        /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    }
+
+    .vent {
+        justify-content: center;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-weight: 500;
+        margin: -47px;
+    }
+    .vent-second {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .vent-description {
+        text-align: center;
+        font-weight: bold;
+        font-size: 30px;
+        padding: 24px;
+    }
+    
+    .vent-description2 {
+        text-align: center;
+        background-color: white;
+        font-size: 20px;
+        font-family:  system-ui;
+        line-height: 2rem;
+        margin: 25px;
+        padding: 25px;
+        box-shadow: rgb(38 57 77) 0px 20px 30px -10px;
+    }
+    .profile__image {
+        width: 300px;
+        border-radius: 10px;
+        box-shadow: rgb(38 57 77) 0px 20px 30px -10px;
+    }
+    .form {
+        text-align: center;
+    }
+    .fieldset{
+        padding: 11px;
+        padding-left: 105px;
+        padding-right: 105px;
+        margin: 35px;
+        background-color: white;
+        font-size: 20px;
+        font-family:  system-ui;
+        box-shadow: rgb(38 57 77) 0px 20px 30px -10px;
+    }
+
+    .profile-container {
+        display: flex;
+        align-items: center;
+        padding: 55px;
+        max-width: 1024px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        background-color: aliceblue;
+    }
+
+     /* Footer-redes-Container*/
+     .footer {
+        text-align: center;
+        color: #333;
+        font-size: 19px;
+        padding: 35px;
+
+    }
+
+    .redes-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 8px;
+    }
+
+    .redes-container ul li {
+        display: inline-block;
+        margin: 0 5px;
+        width: 35px;
+        height: 35px;
+        text-align: center;
+    }
+
+    .redes-container ul li a {
+        display: block;
+        padding: 0 10px;
+        background: #333;
+        color: white;
+        line-height: 30px;
+        font-size: 18px;
+        box-shadow: 0 3px 5px 0px rgb(0, 0, .2);
+        transition: .2s;
+    }
+
+    .redes-container ul:hover a {
+        filter: blur(2px);
+    }
+
+    .redes-container ul li a:hover {
+        transform: translateY(-3) scale(1.05);
+        box-shadow: 0 5px 5px 0px rgb(0, 0, 0, .4);
+        filter: none;
+    }
+
+    .redes-container ul li .facebook:hover {
+        background: var(--facebook);
+    }
+
+    .redes-container ul li .instagram:hover {
+        background: var(--instagram);
+    }
+
+    .redes-container ul li .twitter:hover {
+        background: var(--twitter);
+    }
+
+    .redes-container ul li .pinterest:hover {
+        background: var(--pinterest);
+    }
+
+    .redes-container ul li .linkedin:hover {
+        background: var(--linkedin);
+    }
+}

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dulces Detalles Romerito</title>
+    <script src="https://kit.fontawesome.com/266f1dec9a.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/pasteleriafina.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="header-nav">
+            <input type="checkbox" id="check" />
+            <label for="check" class="bar-btn">
+                <i class="fa-solid fa-cupcake"></i>
+            </label>
+
+            <ul class="nav-menu">
+                <li><a class="active" href="./index.html">Inicio</a></li>
+                <li><a href="./sobrenostros.html">Sobre Nosotros</a></li>
+                <li><a href="#card">Nuestros Paquetes</a></li>
+                <li><a href="https://api.whatsapp.com/send?phone=51970486444">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="banner-container">
+            <div class="banner-text">
+                <h1>DULCES DETALLES ROMERITO</h1>
+            </div>
+            <div class="logo-container">
+                <img src="./img/dulces detalles tarjeta.png" alt="logo" class="logo-container">
+            </div>
+        </section>
+        <span id="first__screen">
+        <section class="cards-contenedor-promociones first__screen" id="card">
+            <h2 class="sombraText zoom">NUESTROS PAQUETES ROMERITO</h2>
+            <div class="content_cards">
+                <article class="card">
+                    <h3>PAQUETE N° 1</h3>
+                    <img class="content_card__image" src="./img/paquete1.jpg" alt="FotoPaquete1">
+                    <button class="buy_button">Comprar</button>
+                </article>
+                <article class="card">
+                    <h3>PAQUETE N° 2</h3>
+                    <img class="content_card__image" src="./img/paquete2.jpg" alt="FotoPaquete2">
+                    <button class="buy_button">Comprar</button>
+                </article>
+                <article class="card">
+                    <h3>PAQUETE N° 3</h3>
+                    <img class="content_card__image" src="./img/paquete3.jpg" alt="FotoPaquete3">
+                    <button class="buy_button">Comprar</button>
+                </article>
+                <article class="card">
+                    <h3>PAQUETE N° 4</h3>
+                    <img class="content_card__image" src="./img/paquete4.jpg" alt="FotoPaquete4">
+                    <button class="buy_button">Comprar</button>
+                </article>
+            </div>
+        </section>
+
+        
+        <section class="pedidos first__screen">
+            <h2 class="sombraText zoom">GALERIA</h2>
+            <div class="contenedor">
+                <article class="trabajos-contenedor">
+                    <img class="content_card__image zoom" src="./img/galeria/1.jpg" alt="Foto1">
+                </article>
+                <article class="trabajos-contenedor">
+                    <img class="content_card__image zoom " src="./img/galeria/2.jpg" alt="Foto2">
+                </article>
+                <article class="trabajos-contenedor">
+                    <img class="content_card__image zoom" src="./img/galeria/3.jpg" alt="Foto3">
+                </article>
+                <article class="trabajos-contenedor">
+                    <img class="content_card__image zoom" src="./img/galeria/4.jpg" alt="Foto4">
+                </article>
+                <article class="trabajos-contenedor">
+                    <img class="content_card__image zoom" src="./img/galeria/5.jpg" alt="Foto5">
+                </article>
+                <article class="trabajos-contenedor">
+                    <img class="content_card__image zoom" src="./img/galeria/6.jpg" alt="Foto6">
+                </article>
+                <article class="trabajos-contenedor">
+                    <img class="content_card__image zoom" src="./img/galeria/7.jpg" alt="Foto7">
+                </article>
+                <article class="trabajos-contenedor">
+                    <img class="content_card__image zoom" src="./img/galeria/8.jpg" alt="Foto8">
+                </article>
+                <article class="trabajos-contenedor">
+                    <img class="content_card__image zoom" src="./img/galeria/9.jpg" alt="Foto9">
+                </article>
+            </div>
+        </section>
+        </span>
+        <section id="second__screen">
+            <p class="vent-description">DETALLE DE TU COMPRA</p><br>
+            <div id="vent" class="vent">
+              <p class="vent-description2"> TEMATICA: Vaca Lola <br>
+                💟 Paquete #3 <br>
+                Torta 25 porciones <br>
+                +6 cupcakes<br>
+                +6 galletas<br>
+                +6 chocomanzanas<br>
+                +6 paletas de chocolate<br>
+                +6 cakepops<br>
+                +6 alfajores <br><br>
+                TOTAL: 365.00<br>
+              </p>
+      
+              <figure >
+                <img src="./img/imgpack.jpg" alt="fotopaquete" class="profile__image">
+              </figure>
+            </div>
+
+            <div class="vent-second">
+      
+              <form class="form">
+                <fieldset class="fieldset">
+                  <legend>COMPRE AHORA</legend><br>
+      
+                  <div id="contenedor" class="">
+      
+                    <label for="numberCard">Ingrese su numero de Tarjeta</label><br>
+                    <input type="text" maxlength="16" id="numberCard" required><br>
+      
+                    <input id="btnValid" class="btn" type="button" value="Compre Ahora" required><br>
+      
+      
+                    <p class="numero" id="number"></p>
+                    <p id="resultado"></p>
+      
+                    <input id="btnBack" class="btn" type="button" value="Volver">
+      
+                  </div>
+                </fieldset>
+      
+              </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        Desarrollado por Gina Peña © 2022 <br> con mucho ♥ para Lisbeth, inspirada en su emprendimiento
+    
+        <div class="redes-container">
+          <ul>
+            <li> <a href="https://www.facebook.com/dulcesdetallesromerito" class="facebook"><i
+                  class="fa-brands fa-facebook-f"></i></a></li>
+            <li> <a href="https://www.instagram.com/dulcesdetallesromerito/?hl=es" class="instagram"><i
+                  class="fab fa-instagram"></i></a></li>
+            <li> <a href="#" class="twitter"><i class="fab fa-twitter"></i></a></li>
+            <li> <a href="#" class="pinterest"><i class="fab fa-pinterest-p"></i></a></li>
+            <li> <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+          </ul>
+        </div>
+      </footer>
+    <script src="./js/index.js" type="module"></script>
+</body>
+</html>
